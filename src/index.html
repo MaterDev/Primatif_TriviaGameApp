@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Trivia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="scores">
+            <div class="team">
+                <h2>Team 1</h2>
+                <p class="score" id="team1-score">0</p>
+            </div>
+            <div class="team">
+                <h2>Team 2</h2>
+                <p class="score" id="team2-score">0</p>
+            </div>
+            <div class="team">
+                <h2>Team 3</h2>
+                <p class="score" id="team3-score">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="game-board">
+            <div class="points-column" id="points-100"></div>
+            <div class="points-column" id="points-200"></div>
+            <div class="points-column" id="points-300"></div>
+            <div class="points-column" id="points-400"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="question-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="points"></span>
+                <button class="review-mode">Review Mode</button>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="category"></p>
+                <div class="question markdown-content"></div>
+                <button class="show-answer">Show Answer</button>
+                <div class="answer markdown-content hidden"></div>
+                <div class="team-buttons hidden">
+                    <!-- Dynamic buttons for each team will be inserted here -->
+                </div>
+            </div>
+            <button class="fullscreen-btn">Toggle Fullscreen</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Attach dynamic event listeners or initialize TriviaGame here if needed
+        });
+    </script>
+    <script src="data/01_react-express-sql-fullstack.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
